@@ -12,12 +12,12 @@ st.set_page_config(layout="wide", page_title="Cattle Breed Classifier", page_ico
 
 @st.cache_resource
 def load_model():
-    return YOLO("best_19.pt")
+    return YOLO("models/best_19.pt")
 
 
 @st.cache_resource
 def load_model_detect():
-    return YOLO("best_latest_detect.pt")
+    return YOLO("models/best_latest_detect.pt")
 
 
 @st.cache_resource
