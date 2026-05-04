@@ -24,9 +24,10 @@ An AI-powered application for **real-time and image-based cattle detection and b
 
 * 🎥 **Real-time detection**
 
-  * Live webcam feed
+  * Live webcam feed (local execution only)
   * Detects cattle continuously
   * Capture and classify selected frame
+  * ⚠️ Not available in deployed version (cloud platforms do not support OpenCV webcam access)
 
 * 🎯 **Closest cattle focus**
 
@@ -137,6 +138,18 @@ streamlit run app.py
 ## 🌐 Live Demo
 
 https://cattle-breed-classification-app.streamlit.app/
+
+⚠️ **Deployment Note**
+
+- The live demo supports:
+  - Image upload classification ✅
+  - Closest cattle detection & zoom ✅
+  - Multilingual information display ✅  
+
+- The following feature is **disabled in the deployed version**:
+  - ❌ Real-time webcam detection (OpenCV `cv2.VideoCapture` not supported on cloud platforms)
+
+👉 To use real-time mode, run the app locally on your system.
 
 ---
 
